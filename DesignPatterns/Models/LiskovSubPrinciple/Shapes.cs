@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Models
+namespace DesignPatterns.Models.LiskovSubPrinciple
 {
     public class Rectangle
     {
@@ -30,7 +30,7 @@ namespace DesignPatterns.Models
         {
 
         }
-       public override int Width
+        public override int Width
         {
             set { base.Width = base.Height = value; }
 

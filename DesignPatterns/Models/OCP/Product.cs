@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Models
+namespace DesignPatterns.Models.OCP
 {
     public class Product
     {
@@ -23,7 +23,7 @@ namespace DesignPatterns.Models
             Size = size;
         }
 
-      public override string ToString()
+        public override string ToString()
         {
             return $"{nameof(Name)}: {Name}, {nameof(Color)}: {Color}, {nameof(Size)}: {Size}";
         }

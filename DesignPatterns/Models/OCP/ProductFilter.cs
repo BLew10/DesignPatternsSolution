@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Models
+namespace DesignPatterns.Models.OCP
 {
     public class ProductFilter
     {
-      public IEnumerable<Product> FilterBySize(IEnumerable<Product> products, Size size)
+        public IEnumerable<Product> FilterBySize(IEnumerable<Product> products, Size size)
         {
             foreach (var p in products)
             {

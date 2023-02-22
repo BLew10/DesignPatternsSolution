@@ -5,20 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Models
+namespace DesignPatterns.Models.OCP
 {
- 
-    public class ColorSpecification : ISpecification<Product>
+    internal class SizeSpecification : ISpecification<Product>
     {
-        private Color color;
-        public ColorSpecification(Color color)
+        private Size size;
+        public SizeSpecification(Size size)
         {
-            this.color = color;
+            this.size = size;
         }
 
         public bool IsSpecified(Product t)
         {
-            return t.Color == color;
+            return t.Size == size;
         }
     }
 }

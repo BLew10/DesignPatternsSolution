@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Interfaces
+namespace DesignPatterns.Interfaces.OCP
 {
     public interface IFilter<T>
     {
